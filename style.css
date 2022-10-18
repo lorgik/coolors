@@ -25,6 +25,7 @@ body {
 	transition: opacity .3s ease;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 	user-select: none;
+	backdrop-filter: blur(55px);
 }
 
 .col .hint {
@@ -32,20 +33,18 @@ body {
 	align-items: center;
 	flex-direction: column;
 	position: relative;
-	transition: all 1s linear;
 }
 
 .col .hint::after {
 	position: absolute;
 	content: 'Ваш цвет скопирован';
 	text-align: center;
-	font-size: 20px;
+	font-size: 15px;
 	bottom: -90px;
 	border-radius: inherit;
 	background-color: inherit;
 	padding: inherit;
 	box-shadow: inherit;
-	transition: inherit;
 	pointer-events: none;
 }
 
@@ -73,5 +72,4 @@ body {
 	cursor: pointer;
 	opacity: 1;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-	
 }

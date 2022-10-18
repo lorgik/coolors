@@ -88,10 +88,12 @@ function getColorsFromHash() {
 }
 
 function showHint(target) {
-	target.classList.toggle('hint')
-	setTimeout(() => {
+	if (!target.classList.contains('hint')) {
 		target.classList.toggle('hint')
-	}, 1500)
+		setTimeout(() => {
+			target.classList.toggle('hint')
+		}, 1500)
+	}
 }
 
 
