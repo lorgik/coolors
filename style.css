@@ -73,3 +73,26 @@ body {
 	opacity: 1;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 719px) {
+	body {
+		flex-direction: column;
+	}
+	
+	.col {
+		flex-direction: row;
+	}
+	
+	.col .hint::after {
+		bottom: -70px;
+	}
+	.col:last-of-type .hint::after {
+		top: -70px;
+		bottom: unset;
+	}
+	
+	.col h2 {
+		min-width: 162px;
+		text-align: center;
+	}
+}
